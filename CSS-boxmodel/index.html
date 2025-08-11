@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style> 
+        /* .box {
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            border: 5px solid black;
+            margin: 30px;
+            background-color: lightblue;
+        } */
+
+        /* .box {
+            width: 250px;
+            height: 150px;
+            background-color: lightgray;
+        } */
+
+        /* padding top right bottom left */
+        /* .box {
+            padding: 10px 20px 15px 5px;
+            background-color: cornflowerblue;
+
+        } */
+
+            /* Now we are going to talk more about the border */
+        /* border -> border-width border-style border color */
+            .box {
+                /* border: 5px solid black; (can be rewritten as ) */
+                /* border-width: 5px;
+                border-style: solid;
+                border-color: black; */
+                /* border: 5px solid black;
+                border: 3px dashed red; */
+                /* border: 4px dotted green;
+                border-radius: 16px; /* rounded corners */
+                /* border: 1px solid black;
+                height: 100px;
+                width: 100px;
+                border-radius: 50px; /* makes it a circle */
+
+                /* talking about the margin now */
+                /* Margin -> top right bottom left */
+                /* background-color: lightblue;
+                margin: 30px 10px 5px 30px; */
+                /* padding: 30px; */
+
+                /* width: 200px;
+                background-color: lightblue;
+                margin:auto; */
+
+                /* width: 200px;
+                height: 100px; 
+                padding: 20px;
+                border: 5px solid black;
+                /* there is a problem here the box is bigger than 200 by 100px */
+                /* box-sizing: border-box; makes the box exactly 200 by 100px including the padding and border */
+
+                /* box-shadow x-offset y-offset blur-radius color */
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+                /* x-offset → how far the shadow moves horizontally.
+
+                Positive value → shadow moves to the right.
+
+                Negative value → shadow moves to the left.
+
+                y-offset → how far the shadow moves vertically.
+
+                Positive value → shadow moves downward.
+
+                Negative value → shadow moves upward. */
+
+            } 
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">Hello, I'm a box!</div>
+</body>
+</html>
