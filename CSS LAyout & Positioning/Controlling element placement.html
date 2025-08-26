@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Positioning</title>
+        <style>
+            .static {
+                position: static; /* Default positioning */
+            } 
+
+            .relative {
+                position: relative; /* Moves relative to its normal position */
+                top: 50px;  
+                /* Moves down by 20px */
+                left: 100px; 
+                /* Moves right by 30px */
+            }
+
+            .parent {
+                position: relative; /* Parent with relative positioning */
+                width: 300px;
+                height: 1000px;
+                background-color: lightgray;
+            }
+
+            .absolute {
+                position: absolute;
+                top: 20px;
+                left: 50px;
+                background-color: lightcoral; 
+            }
+
+            .fixed{
+                position: fixed; /* Stays fixed on the screen */
+                bottom: 10px; 
+                right: 10px; 
+                background-color: yellow;
+            }
+
+            .sticky {
+                position: sticky;
+                top: 0; /* Sticks to the top when scrolling */
+                background-color: lightgreen;
+                padding: 10px;
+                z-index: 10000; /* Ensures it stays on top */
+            }
+
+            .box {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+            }
+
+            .one {
+                background-color: red;
+                z-index: 1; /* Lower z-index */
+            }
+
+            .two {
+                background-color: blue;
+                z-index: 2; /* Higher z-index, appears above .one */
+                top: 20px; /* Adjust position to overlap */
+                left: 20px;
+            }
+
+
+        </style>
+    </head>
+    <body>  
+        <!-- <header class="sticky">I am Sticky</header>
+      <p class="Static">I am Static.</p>
+      <div class="relative">I am a Relative</div>
+      <div class="fixed">I am a Fixed element</div>
+      <div class="parent">
+        <div class="absolute">I am an Absolute element</div>
+        </div> -->
+        <div class="box one"> box one </div>
+        <div class="box two"> box two ( above )</div>
+      
+    </body>
+
+</html>
+
+<!-- Static (default) : Normal flow, no positioning
+     Relative : Moves realtive to its normal position
+     Absolute: MOves realtive to the nearest positioned ancestor
+     Fixed: Stays fixed on the screen
+     Sticky: sticks when scrolling past a point -->

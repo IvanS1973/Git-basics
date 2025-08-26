@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Transformation & Decoration</title>
+    <style>
+      .uppercase {
+        text-transform: uppercase; /* Transforms text to uppercase */
+      }
+
+      .lowercase {
+        text-transform: lowercase; /* Transforms text to lowercase */
+      } 
+        .capitalize {
+            text-transform: capitalize; /* Capitalizes the first letter of each word */
+        }
+
+        .underline {
+            text-decoration: underline; /* Underlines the text */
+        }
+
+        .line-through {
+            text-decoration: line-through; /* Strikes through the text */
+        }
+
+        .no-decoration {
+            text-decoration: none; /* Removes any text decoration */
+        }
+    </style>
+</head>
+<body>
+<p class="uppercase underline ">This text is transformed to uppercase.</p>
+<p class="lowercase line-through">THIS TEXT IS TRANSFORMED TO LOWERCASE.</p>
+<p class="capitalize line-through no-decoration">this text is transformed to capitalize.</p>
+<a class="no-decoration" href="https://google.com">google.com</a>
+</body>
+</html>
