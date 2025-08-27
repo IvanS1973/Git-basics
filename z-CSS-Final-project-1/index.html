@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My personal Blog</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>
+                My personal blog 
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#home"> Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <!-- main content -->
+        <main>
+            <section id="About">
+                <h2> about me</h2>
+                <p>Welcome to my personal Blog! I share thoughts on web development, techonolgy, and more</p>
+
+            </section>
+            <article>
+                <h2>Understanding Semantic HTML</h2>
+                <p>Semantic HTML is a way to write HTML that describves the meaning of the content </p>
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Beautiful Landscape">
+                
+            </article>
+            <article>
+                <h2>How to add media in HTML</h2>
+                <p>Adding images, videos, and audio files enhance the users experiences </p>
+                <audio controls>
+                    <source src="semantic.html_random-dream-214714.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </article>
+            <!-- embedding youtibe video -->
+            <section>
+                <h2>Watch my latest video</h2>
+                 <iframe width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/YeTaFg7WE04?si=r_sPnYNapPxzUmBC"
+     title="YouTube video player" 
+     frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen></iframe>
+            </section>
+        </main>
+        <!-- sidebar -->
+         <aside>
+            <h3> 
+                more links
+            </h3>
+            <ul>
+                <li><a href="#">My Portfolio</a></li>
+                <li><a href="#">Follow me on other platforms</a></li>
+                <li><a href="#">Subscribe to my youtube</a></li>
+            </ul>
+         </aside>
+        </div>
+        
+         <!-- footer -->
+         <footer id="Contact">
+            <p>contact me at : <a href="mailto:ivansosa7777@gmail.com">ivansosa7777@gmail.com</a></p>
+            <p>call me at: <a href="tel:+123456789">+123456789</a></p>
+            <p>&copy; 2025 My Personal Blog</p>
+         </footer>
+    </body>
+    </html>
+       
+    <!-- 
+    [x] a header with a navigatoinm bar
+    [x] a main content area with blog articles
+    [x] a sidebar using <aside>
+    [x] a footer with contact details
+    [] anchor links for navigation
+    [x] images, audio and video
+    [x]a youtube video embedded
+    -->
